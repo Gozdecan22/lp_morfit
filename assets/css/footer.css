@@ -1,0 +1,94 @@
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer {
+  background-color: #4D4685; /* Arka plan rengi (mor) */
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Tüm içeriği ortala */
+}
+
+.footer-bottom {
+  background-color: #4D4685;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between; /* Elemanları yatayda dağıt */
+  align-items: center;
+  font-size: 13px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-bottom p {
+  color: white;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 13px;
+  margin-bottom: 0; /* Alt boşluk kaldırıldı */
+}
+
+/* Sosyal medya başlığı ve ikonlar yanyana */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* İkonlar arası boşluk */
+}
+
+.social-title {
+  color: #ffc507; /* Sarı renk */
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 14px;
+  margin-right: 10px; /* Başlık ile ikonlar arası boşluk */
+}
+
+.social-icons a {
+  color: #ffc107; /* Sarı ikon rengi */
+  font-size: 15px; /* Küçük ikon boyutu */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #f2f2f2; /* Hover rengi */
+}
+
+/* Alt bağlantılar */
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 13px;
+}
+
+.footer-bottom-links a:hover {
+  color: #ffc507;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin: 1rem 0;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .footer-bottom-links {
+    margin-top: 1rem;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .social-icons a {
+    color: #ffc107 !important; /* Sarı ikon rengi */
+  }
+}

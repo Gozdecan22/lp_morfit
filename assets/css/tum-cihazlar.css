@@ -1,0 +1,128 @@
+/* Slider ve genel stil ayarları */
+.cihaz #container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: radial-gradient(circle, #FFFFFF 0%, #f2f2f2 100%);
+  }
+  .cihazlar-baslik {
+    font-family: "Montserrat-Medium", sans-serif;
+    color: #4d4685;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .swiper-container-wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 40px; */
+  }
+  
+  .item {
+    text-align: center;
+    max-width: 300px; /* Tüm öğeler için sabit genişlik */
+    height: 300px; /* Sabit yükseklik verildi */
+    margin: 3rem auto;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .item img {
+    width: 100%; /* Resim genişliği item ile aynı olacak */
+    height: 250px; /* Sabit resim yüksekliği */
+    object-fit: cover; /* Görselin boyutlarını bozmadan, kutuya sığdırır */
+    border-radius: 10px; /* Köşeleri yuvarlama */
+    transition: transform 0.3s ease;
+  }
+  
+  .item img:hover {
+    transform: scale(1.05); /* Hover efektinde büyüme */
+  }
+  
+  .item-text {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .item-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #696969;
+    font-family: "Montserrat-Regular", sans-serif;
+  
+  }
+  .cihaza-git {
+    font-size: 14px;
+    color: #696969; /* Mavi renk */
+    text-decoration: none;
+    font-family: "Montserrat-Regular", sans-serif;
+    transition: all 0.3s ease;
+    display: inline-block; /* Blok elemente dönüştürüldü */
+  }
+  
+  .cihaza-git:hover {
+    color: #4d4685; /* Hover durumunda daha koyu renk */
+    text-decoration: none;
+    transform: scale(1.1); /* Hover efektinde büyüme */
+  }
+  .material-symbols-outlined {
+    font-size: 40px !important;
+  }
+  /* Özelleştirilmiş Swiper butonları */
+  .custom-swiper-button-prev,
+  .custom-swiper-button-next {
+    font-size: 40px !important;
+    color: #6F6F6F;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .custom-swiper-button-prev {
+    left: -10px;
+  }
+  
+  .custom-swiper-button-next {
+    right: -10px;
+  }
+  
+  /* Mobil görünümde slider düzenlemesi */
+  @media (max-width: 768px) {
+    .item {
+      max-width: 250px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .item img {
+      height: 200px;
+    }
+  
+    .item-title {
+      font-size: 16px;
+    }
+  
+    .cihaza-git {
+      font-size: 14px;
+    }
+  
+    .custom-swiper-button-prev,
+    .custom-swiper-button-next {
+      font-size: 30px;
+    }
+  }
+  

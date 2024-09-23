@@ -1,0 +1,247 @@
+.testbox div,
+.testbox form,
+.testbox input,
+.testbox select,
+.testbox textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 13px;
+  color: #666;
+  line-height: 22px;
+}
+
+.testbox h2 {
+    font-family: "Montserrat-Medium", sans-serif;
+    color: #003c89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: normal;
+}
+
+.testbox p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 13px;
+  color: #666;
+  line-height: 22px;
+}
+
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 3px;
+}
+
+.testbox form {
+  width: 100%;
+  padding: 20px;
+}
+
+.testbox input,
+.testbox select,
+.testbox textarea {
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px #ccc;
+  border-radius: 3px;
+  border: none;
+  background: #fff !important;
+}
+
+.testbox input:hover,
+.testbox select:hover,
+.testbox textarea:hover {
+  outline: none;
+  box-shadow: 0 0 5px 0 #095484;
+}
+
+.testbox input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+.testbox textarea {
+  width: calc(100% - 2px);
+  padding: 5px;
+}
+
+.testbox .testbox-item {
+  position: relative;
+  margin: 10px 0;
+}
+
+.testbox .testbox-item:hover p,
+.testbox .testbox-item:hover i {
+  color: #095484;
+}
+
+.testbox input:hover,
+.testbox select:hover,
+.testbox textarea:hover {
+  box-shadow: 0 0 5px 0 #095484;
+}
+
+.testbox .status:hover input {
+  box-shadow: none;
+  border: none;
+}
+
+.testbox.status label:hover input {
+  box-shadow: 0 0 5px 0 #095484;
+}
+
+.testbox .status-item input,
+.testbox .status-item span {
+  width: auto;
+  vertical-align: middle;
+}
+
+.testbox .status-item input {
+  margin: 0;
+  border: none !important;
+}
+
+.testbox .status-item span {
+  margin: 0 20px 0 5px;
+}
+
+.testbox .title-block select,
+.testbox .title-block input {
+  margin-bottom: 10px;
+}
+
+.testbox select {
+  padding: 7px 0;
+  width: calc(100% - 20px) !important;
+}
+
+.testbox select,
+.testbox table {
+  width: 100%;
+}
+
+.testbox option {
+  background: #fff;
+  font-weight: 300;
+}
+
+.testbox th,
+.testbox td {
+  width: 18%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  vertical-align: unset;
+  line-height: 18px;
+  font-weight: 300;
+  word-break: break-all;
+}
+
+.testbox .question input[type="checkbox"] {
+  display: none;
+}
+
+.testbox .question label.check {
+  position: relative;
+  display: inline-block;
+  margin: 5px 20px 10px 0;
+  cursor: pointer;
+}
+
+.testbox .question span {
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.testbox span.required {
+  margin-left: 0;
+  color: #003c89;
+}
+
+.testbox .question label.check:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #003c89;
+}
+
+.testbox .question input[type="checkbox"]:checked + .check:before {
+  background: #003c89;
+}
+
+.testbox .question label.check:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 8px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.testbox .question input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.testbox .btn-block {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.testbox button {
+    font-family: "Montserrat-Medium", sans-serif;
+    width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #003c89;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.testbox button:hover {
+  background: #0666a3;
+}
+
+@media (min-width: 768px) {
+  .testbox .name-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .testbox .name-item input {
+    width: calc(100% - 20px);
+  }
+
+  .testbox .title-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testbox .title-block select {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .testbox .title-block input {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}

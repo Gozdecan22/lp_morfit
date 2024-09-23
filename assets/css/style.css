@@ -1,0 +1,365 @@
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #696969;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+a {
+  color: #696969;
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+
+a:hover {
+  color: #4d4685;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+  font-family: "Montserrat", sans-serif;
+  color: #4d4685;
+}
+p,
+a,
+li,
+button {
+  font-family: "Montserrat", sans-serif;
+  color: #696969;
+  font-size: 14px;
+}
+
+.bg_bizkimiz {
+  background: radial-gradient(circle, #ffffff 0%, #f2f2f2 100%);
+}
+/* İki sütun arasındaki boşluğu artırın */
+
+.bg_bizkimiz .col-md-6 {
+  padding: 15px;
+}
+
+/* İki sütun arasında ek boşluk ekleyin */
+.bg_bizkimiz .col-md-6 img {
+  margin-left: -15px; /* Soldaki sütundaki görselin sağında boşluk bırakır */
+}
+
+.bizkimiz_ust_p {
+  font-size: 20px;
+  color: #696969;
+  font-family: "Montserrat-Regular", sans-serif;
+  position: relative;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.bizkimiz_baslik {
+  font-size: 40px;
+  color: #4d4685;
+  font-family: "Montserrat-Black", sans-serif;
+  position: relative;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.bizkimiz_info {
+  font-size: 14px;
+  color: #696969;
+  font-family: "Montserrat-Regular", sans-serif;
+  position: relative;
+  letter-spacing: normal;
+}
+.biz-kimiz-link {
+  text-decoration: none;
+  color: #4b3f7a; /* Default color */
+  font-size: 15px;
+  font-family: "Montserrat-Regular", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.biz-kimiz-link .arrow {
+  font-size: 1.5em; /* Adjust size of the Bootstrap arrow icon */
+  margin-left: 10px;
+}
+
+.biz-kimiz-link:hover {
+  animation: colorAndArrow 0.5s forwards ease-in-out;
+}
+
+@keyframes colorAndArrow {
+  0% {
+    color: #4b3f7a; /* Default text color */
+    transform: translateX(0); /* Arrow initial position */
+  }
+  100% {
+    color: #ffc507; /* Final text color on hover (customizable) */
+    transform: translateX(10px); /* Arrow moves 10px to the right */
+  }
+}
+
+/* specialiest */
+.main-title {
+  font-size: 120px;
+  color: #4d4685;
+  position: relative;
+  z-index: 1;
+  top: 125px;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+.text-header-medium {
+  font-size: 42px;
+  color: #898989;
+  font-family: "Montserrat-Light", sans-serif;
+  position: relative;
+  top: 140px;
+  letter-spacing: normal;
+}
+.text-header-little {
+  font-size: 30px;
+  color: #696969;
+  font-family: "Montserrat-Light", sans-serif;
+  position: relative;
+  top: 140px;
+  letter-spacing: normal;
+}
+
+.center-img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+.specialiest {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -65px;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-icon-container {
+  display: inline-block;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.feature-text {
+  text-align: left;
+  max-width: max-content;
+  transition: color 0.3s ease;
+  margin: 0 1rem;
+}
+
+.feature-title {
+  font-size: 16px;
+  margin: 0;
+  color: #696969; /* Başlangıçta mor renkte */
+  transition: color 0.3s ease;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+.feature-description {
+  font-size: 12px;
+  color: #696969;
+  margin: 0;
+  padding: 1rem 0;
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+/* Hover durumunda ikon ve başlık birlikte altın rengine dönüşecek ve ikon hafifçe büyüyecek */
+.feature:hover .feature-icon {
+  filter: #fff; /* Altın rengi */
+  transform: scale(1.2); /* İkon hafif büyüyecek */
+}
+
+.feature:hover .feature-title {
+  color: #ffc507; /* Başlıklar da altın renge dönecek */
+}
+.ust_baslik {
+  font-size: 27px;
+  color: #696969;
+  font-family: "Montserrat-Regular", sans-serif;
+  position: relative;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.yildiz_olun {
+  font-size: 75px;
+  color: #703e97;
+  font-family: "Montserrat-Medium", sans-serif;
+  position: relative;
+  letter-spacing: 0;
+  text-wrap: nowrap;
+  line-height: normal;
+}
+.alt_p {
+  font-size: 13px;
+  color: #696969;
+  font-family: "Montserrat-Regular", sans-serif;
+  position: relative;
+  letter-spacing: normal;
+}
+.morfitli_ol {
+  background-color: #4d4685; /* Butonun mor rengi */
+  color: white; /* Metin rengi */
+  font-weight: bold; /* Yazı kalınlığı */
+  border: none; /* Buton kenarlığı yok */
+  border-radius: 20px; /* Yuvarlak köşeler */
+  padding: 8px 15px; /* Butonun iç boşluğu */
+  font-family: Arial, sans-serif; /* Yazı tipi */
+  cursor: pointer; /* Fare simgesi */
+  transition: all 0.3s ease; /* Tüm özellikler için geçiş */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+.morfitli_ol a {
+  color: white; /* Metin rengi */
+}
+.morfitli_ol:hover {
+  background-color: #3e3a6f; /* Hover'da butonun koyulaşan rengi */
+  transform: scale(1.05); /* Hover'da butonu biraz büyüt */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Gölgeyi büyüt */
+}
+@media (max-width: 768px) {
+  .bg_bizkimiz .col-md-6 img {
+    margin-left: 0;
+  }
+  .bg_bizkimiz .col-md-6 {
+    padding: 30px;
+}
+  .main-title {
+    font-size: 52px;
+    color: #4d4685;
+    position: relative;
+    z-index: 1;
+    top: 95px;
+    font-family: "Montserrat-Medium", sans-serif;
+  }
+  .text-header-medium {
+    font-size: 24px;
+    color: #898989;
+    font-family: "Montserrat-Light", sans-serif;
+    position: relative;
+    top: 110px;
+    letter-spacing: normal;
+  }
+  .text-header-little {
+    font-size: 18px;
+    color: #696969;
+    font-family: "Montserrat-Light", sans-serif;
+    position: relative;
+    top: 110px;
+    letter-spacing: normal;
+  }
+  #mobil-special {
+    margin-top: 120px;
+  }
+  .yildiz_olun {
+    font-size: 40px;
+  }
+  .ust_baslik {
+    font-size: 16px;
+  }
+  .salon-baslik {
+    font-size: 125px !important;
+    letter-spacing: 0 !important;
+  }
+  .salon-altbaslik {
+    font-size: 24px !important;
+  }
+}
+.salon-baslik {
+  font-family: "Montserrat-Medium", sans-serif;
+  color: #ffc507;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  font-size: 140px;
+  letter-spacing: 0.02em;
+}
+
+.salon-altbaslik {
+  font-family: "Montserrat-Regular", sans-serif;
+  color: #4d4685;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 27px;
+}
