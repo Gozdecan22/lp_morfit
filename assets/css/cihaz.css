@@ -1,441 +1,152 @@
 .section-cihaz {
-  font-family: "Montserrat", sans-serif;
-  background: radial-gradient(circle, #ffffff 0%, #eaeaea 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cihaz-baslik {
-  font-family: "Montserrat-Medium", sans-serif;
-  color: #4d4685;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
-  font-size: 85px;
-  letter-spacing: 0.02em;
-}
-.cihaz-baslik span {
-  color: #696969;
-  font-family: "Montserrat-Regular", sans-serif;
-}
-.cihaz-altbaslik {
-  font-family: "Montserrat-Regular", sans-serif;
-  color: #696969;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 24px;
-}
-.table-custom {
-  width: 30vw;
-  margin: 20px auto;
-  background-color: transparent;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.table-custom th {
-  color: #4d4685;
-  font-family: "Montserrat-Regular", sans-serif;
-  border-bottom: 3px solid #4d4685;
-  font-size: 14px;
-  background: transparent;
-}
-.table-custom thead {
-  border-bottom: 1px solid #dee2e6;
-}
-.table-custom td {
-  border: none;
-  font-size: 13px;
-}
-.check-mark {
-  color: #8b4513; /* Kahverengi ton */
-  font-weight: bold;
-  text-align: center;
-}
-.table-custom tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.alt-info {
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 14px;
-  color: #696969;
-  padding: 0 75px;
-  text-align: center;
-}
-.tab-baslik {
-  font-family: "Montserrat-Medium", sans-serif;
-  color: #4d4685;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-.nav-pill-main-div {
-  position: relative;
-  max-width: 100%; /* Control the maximum width */
-  overflow: hidden; /* Prevent overflow */
-}
-
-.tab-container {
-  display: flex; /* Use flexbox to align tabs and arrows */
-  align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Space items evenly */
-  flex-wrap: nowrap; /* Prevent wrapping */
-}
-
-ul.tabs {
-  display: flex;
-  overflow-x: auto; /* Allow horizontal scrolling */
-  white-space: nowrap; /* Prevent tabs from wrapping */
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  flex-wrap: nowrap;
-}
-
-ul.tabs::-webkit-scrollbar {
-  display: none; /* Hide scrollbar */
-}
-
-.tab-arrows {
-  display: flex;
-  margin: 0 10px; /* Space between tabs and arrows */
-}
-
-.tab-arrows button {
-  background-color: #4d4685;
-  width: 40px;
-  height: 40px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 50%;
-  pointer-events: auto; /* Enable button clicks */
-}
-
-
-ul.tabs li {
-  background: none;
-  color: #696969;
-  display: inline-block;
-  padding: 0;
-  cursor: pointer;
-  transition: 0.3s ease all;
-  width: auto;
-}
-
-ul.tabs li.current {
-  color: #696969;
-  transition: 0.3s ease all;
-}
-
-ul.tabs li.current span {
-  color: #fff;
-  transition: 0.3s ease all;
-  background-color: #4d4685;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  font-family: "Montserrat-Medium", sans-serif;
-}
-
-.tab-content {
-  display: none;
-  padding: 15px;
-  transition: 0.3s ease all;
-}
-
-.tab-content.current {
-  display: inherit;
-  transition: 0.3s ease all;
-}
-/*------ease effect------*/
-.nav-justified > li {
-  float: none;
-}
-
-.nav-justified > li span {
-  width: 100%;
-}
-
-.customize_solution .nav-justified > li {
-  float: none;
-}
-
-.customize_solution span.ease-effect {
-  text-decoration: none;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s ease all;
-  font-family: "Montserrat-Medium", sans-serif;
-}
-
-.customize_solution span.ease-effect:hover,
-.customize_solution span.ease-effect:focus {
-  color: #696969;
-  transition: 0.3s ease all;
-  background-color: transparent;
-}
-
-.customize_solution span.ease-effect {
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  border-bottom-right-radius: 50px;
-  border-top-left-radius: 50px;
-  position: relative;
-  background-color: #f5f5f5;
-}
-
-/* Mobil uyumlu tasarım */
-@media (max-width: 768px) {
-  .nav-pill-main-div {
-    position: relative;
-    max-width: 100%;
-    width: auto;
-    overflow: hidden;
-  }
-  ul.tabs {
+    font-family: "Montserrat", sans-serif;
+    background: radial-gradient(circle, #ffffff 0%, #eaeaea 100%);
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory; /* Kaydırma kaydırma noktaları */
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/Group\ 620.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
   }
-
-  ul.tabs li {
-    flex: 0 0 auto;
-    scroll-snap-align: center; /* Tabların ortalanmasını sağlar */
-  }
-
-  .tab-arrows {
-    display: flex; /* Mobilde okları göster */
-  }
-  .tab-arrows button {
-    background-color: #4d4685;
-    width: 25px;
-    height: 25px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 12px;
-    border-radius: 50%;
-    pointer-events: auto; /* Okların tıklanabilir olmasını sağlar */
-  }
+  
   .cihaz-baslik {
-    font-size: 40px;
+    font-family: "Gilroy-Black", sans-serif;
+    color: #4d4685;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    font-size: 85px;
+    letter-spacing: 0.02em;
+  }
+  .cihaz-baslik span {
+    color: #696969;
   }
   .cihaz-altbaslik {
-    font-size: 20px;
+    font-family: "Montserrat-Medium", sans-serif;
+    color: #696969;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+  }
+  .table-custom {
+    width: 30vw;
+    margin: 20px auto;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .table-custom th {
+    color: #4d4685;
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    border-bottom: 3px solid #4d4685;
+    font-size: 14px;
+    background: transparent;
+  }
+  .table-custom thead {
+    border-bottom: 1px solid #dee2e6;
+  }
+  .table-custom td {
+    border: none;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold", sans-serif;
+  }
+  .check-mark {
+    color: #8b4513; /* Kahverengi ton */
+    font-weight: bold;
+    text-align: center;
+  }
+  .table-custom tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
   }
   .alt-info {
-    padding: 0;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 14px;
+    color: #696969;
+    padding: 0 75px;
+    text-align: center;
   }
   .tab-baslik {
-    padding: 2rem;
+    font-family: "Montserrat-Black", sans-serif;
+    color: #4d4685;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
-}
-.features-icons {
-  padding-bottom: 3rem;
-  background-color: #4d4685;
-}
-
-.features-icons .features-icons-item {
-  max-width: 20rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 5% auto;
-}
-
-.features-icons .features-icons-item .features-icons-icon img {
-  width: 100%;
-  height: auto;
-  /* Resmi eşit şekilde sığdırmak için */
-  object-fit: cover;
-}
-
-.features-icons-item {
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.features-icons-item:hover {
-  transform: scale(1.1);
-}
-.sss-baslik {
-  font-family: "Montserrat-Medium", sans-serif;
-  color: #4d4685;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-.sss {
-  margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
-}
-
-.accordion {
-  border-bottom: 2px solid #e9e9e9;
-}
-
-.accordion .accordion-item {
-  border-bottom: 2px solid #e9e9e9;
-  border-right: none;
-  border-left: none;
-  border-top: none;
-}
-
-.accordion button {
-  position: relative;
-  display: block;
-  text-align: left;
-  width: 100%;
-  padding: 1em 0;
-  color: #090827;
-  font-size: 1.15rem;
-  font-weight: 400;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-.accordion button:hover,
-.accordion button:focus {
-  cursor: pointer;
-  color: #4d4685;
-}
-
-.accordion button:hover::after,
-.accordion button:focus::after {
-  cursor: pointer;
-  color: #4d4685;
-  border: 2px solid #4d4685;
-}
-
-.accordion .accordion-title {
-  padding: 1em 1.5em 1em 0;
-}
-
-.accordion .icon {
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  right: 0;
-  width: 22px;
-  height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
-}
-
-.accordion .icon::before {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 9px;
-  left: 5px;
-  width: 10px;
-  height: 2px;
-  background: currentColor;
-}
-
-.accordion .icon::after {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 9px;
-  width: 2px;
-  height: 10px;
-  background: currentColor;
-}
-
-.accordion button[aria-expanded="true"] {
-  color: #4d4685;
-}
-
-.accordion button[aria-expanded="true"] .icon::after {
-  width: 0;
-}
-
-.accordion button[aria-expanded="true"] + .accordion-content {
-  opacity: 1;
-  max-height: 7em;
-  transition: all 200ms linear;
-  will-change: opacity, max-height;
-}
-
-.accordion .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 200ms linear, max-height 200ms linear;
-  will-change: opacity, max-height;
-}
-
-.accordion .accordion-content p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 1em 0;
-}
-.hotspot {
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  background-color: #FFC507;
-  border: 5px solid #4d4685;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.hotspot:hover,
-.hotspot.active {
-  transform: scale(1.2);
-  box-shadow: 0 0 10px #7a599a;
-}
-
-.tooltip {
-  display: none;
-  position: absolute;
-  background-color: #FFC507;
-  color: #7a599a;
-  padding: 10px;
-  border-radius: 8px;
-  z-index: 1000 !important;
-  /* white-space: nowrap; */
-  width: 140px;
-  left: 30px;
-  top: -10px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transform: translateY(-10px);
-  box-shadow: 0 0 10px #7a599a;
-}
-.tooltip h3 {
-  font-family: "Montserrat-Medium", sans-serif;
-  font-size: 14px !important;
-}
-.tooltip p {
-  font-family: "Montserrat-Regulsr", sans-serif;
-  font-size: 12px !important;
-}
-
-.hotspot:hover .tooltip,
-.hotspot.active .tooltip {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
+  /* Mobil uyumlu tasarım */
+  @media (max-width: 768px) {
+    .cihaz-baslik {
+      font-size: 40px;
+    }
+    .cihaz-altbaslik {
+      font-size: 20px;
+    }
+    .alt-info {
+      padding: 0;
+    }
+    .tab-baslik {
+      padding: 1rem;
+    }
+    .features-icons .features-icons-item .features-icons-icon img {
+      width: 60% !important;
+      height: auto;
+      object-fit: cover;
+  }
+  .table-custom {
+      width: 100%;
+    }
+    .section-cihaz {
+       height: 100%;
+      }
+      
+  }
+  .features-icons {
+    padding-bottom: 3rem;
+    background-color: #4d4685;
+  }
+  
+  .features-icons .features-icons-item {
+    max-width: 20rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5% auto;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: max-content;
+  }
+  
+  .features-icons-item {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .features-icons-item:hover {
+    transform: scale(1.1);
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .features-icons .features-icons-item .features-icons-icon img {
+      width: 100% !important;
+    }
+    .table-custom {
+      width: 80vw;
+    }
+    .alt-info {
+      padding: 0;
+    }
+  }
+  

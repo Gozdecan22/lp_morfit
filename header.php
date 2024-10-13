@@ -36,7 +36,9 @@
             </div>
             <div class="fixed-buttons">
 
-                <div class="botros-button-default"><a href="#"> <i class="fab fa-whatsapp-square px-2"></i>Whatsapp Hattı</a></div>
+            <div class="botros-button-default"><a href="https://api.whatsapp.com/send?phone=905533881469"
+                        rel="nofollow noreferrer" target="_blank"> <i class="fab fa-whatsapp-square px-1"></i>Whatsapp
+                        Hattı</a></div>
                 <!-- <div class="botros-button-default"><a href="#"><i class="fas fa-user-friends px-2"></i>Morfit’li Olmak</a></div> -->
             </div>
 

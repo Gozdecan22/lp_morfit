@@ -17,136 +17,123 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
 <body>
     <?php include('header.php'); ?>
     <section class="section-cihaz">
-        <div class="container d-flex justify-content-center align-items-center flex-column p-5 mt-5">
+        <div class="container d-flex justify-content-center align-items-center flex-column p-lg-5 mt-lg-5">
 
             <div class="row px-5">
-                <div class="col-md-6 mt-5">
-                    <p class="salon-altbaslik">Morfit ile Kendi Salonuzu</p>
+                <div class="col-lg-6 mt-lg-5">
 
-                    <h1 class="salon-baslik mb-3" data-aos="zoom-in" data-aos-duration="1000">
-                        AÇIN
+                    <h1 class="salon-baslik mt-5 pt-5" data-aos="zoom-in" data-aos-duration="1000">
+                        Morfit ailesine <span>Katılmak
+                            İçin Formu Doldur.</span>
                     </h1>
-                    <p>
-                        Küresel pazarda trend belirleyici olarak bilinirken, hızlı teslimat ve düşük maliyet sayesinde,
-                        işletmelerin kendi iş yerlerini kısa sürede açmasını amaçlayan Morfit Group; sermayesini Avrupa
-                        ve Türkiye genelinde kâra dönüştürmek isteyen kişilere hizmet vermeyi hedeflemektedir.
-                    </p>
-
-                    <p>
-                        Profesyonel ve güvenli ekipmanlarımız, çeşitli iklim koşullarında uzun süreli ve ağır hizmet
-                        tipi kullanıma dayanacak şekilde tasarlanmıştır. ISO ve CE Sertifikalarına ve Uluslararası
-                        patentlere sahip olan Fitnesswell ürünlerini müşteriyle buluşturan Morfit, size verimli ve uzun
-                        süre hizmet edecek ekipmanlar sunmanın garantisini verir.
-                    </p>
                 </div>
-                <div class="col-md-6" data-aos="zoom-in-left" data-aos-duration="1000">
-                    <img src="assets/img/kendisalonunuzuacin.png" alt="" class="img-fluid ms-lg-4">
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section>
-        <div class="container p-lg-5">
-            <div class="testbox" style="position: relative;">
-                <!-- Result message -->
-                <div id="result"></div>
-                <form id="contactForm" action="mesaj-gonder.php" method="POST" enctype="multipart/form-data">
-                    <h2 class="mb-5"> Morfit ailesine Katılmak İçin Formu Doldur</h2>
-                    <p style="color:#003C89;  font-family: 'Vogie-Regular', sans-serif; ">*Formda doldurulması zorunlu
-                        alanlar</p>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="testbox-item">
-                                <p>Adınız Soyadınız<span class="required">*</span></p>
-                                <div class="name-item">
-                                    <input type="text"name="name" id="name" placeholder="Adınız Soyadınız" required />
+                <div class="col-lg-6 pt-5" data-aos="zoom-in-left">
+                    <div class="testbox" style="position: relative;">
+                        <!-- Result message -->
+                        <div id="result"></div>
+                        <form id="contactForm" action="mesaj-gonder.php" method="POST" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="testbox-item">
+                                        <p>Adınız Soyadınız<span class="required">*</span></p>
+                                        <div class="name-item">
+                                            <input type="text" name="name" id="name" placeholder="Adınız Soyadınız"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testbox-item">
+                                        <p>Email Adresiniz<span class="required">*</span></p>
+                                        <div class="name-item">
+                                            <input class="name" type="email" id="email" name="email"
+                                                placeholder="Email Adresiniz" required />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="testbox-item">
-                                <p>Email Adresiniz<span class="required">*</span></p>
-                                <div class="name-item">
-                                    <input class="name" type="email" id="email" name="email"
-                                        placeholder="Email Adresiniz" required />
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <p>Telefon Numaranız<span class="required">*</span></p>
+                                    <input class="name" type="tel" id="phone" name="phone"
+                                        placeholder="Telefon Numaranız" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Mesaj Tipi<span class="required">*</span></p>
+                                    <div class="title-block">
+                                        <select name="mesajturu" required>
+                                            <option value="fiyat-talebi" selected>Fiyat Talebi</option>
+                                            <option value="tesekkur">Teşekkür</option>
+                                            <option value="istek/oneri">İstek/Öneri</option>
+                                            <option value="sikayet">Şikayet</option>
+                                            <option value="diger">Diğer</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-
-                        <div class="col-md-6">
-                            <p>Telefon Numaranız<span class="required">*</span></p>
-                            <input class="name" type="tel" id="phone" name="phone" placeholder="Telefon Numaranız"
-                                required />
-                        </div>
-                        <div class="col-md-6">
-                            <p>Mesaj Tipi<span class="required">*</span></p>
-                            <div class="title-block">
-                                <select name="mesajturu" required>
-                                    <option value="fiyat-talebi" selected>Fiyat Talebi</option>
-                                    <option value="tesekkur">Teşekkür</option>
-                                    <option value="istek/oneri">İstek/Öneri</option>
-                                    <option value="sikayet">Şikayet</option>
-                                    <option value="diger">Diğer</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="testbox-item">
-                                <p>Mesajınız*<span class="required">*</span></p>
-                                <textarea name="mesaj" rows="8" required></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="container">
-                                <div class="row ms-4 mt-lg-5">
-                                    <div class="question">
-                                        <div class="question-answer checkbox-item">
-                                            <div>
-                                                <input type="checkbox" id="check_1" name="check_1"
-                                                    value="kisisel_veriler" required />
-                                                <label for="check_1" class="check"><a href="#"><span>6698 sayılı Kişisel
-                                                            Verilerin Korunması Kanununa ait bilgilendirmeyi
-                                                            okudum.</span></a></label>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="testbox-item">
+                                        <p>Mesajınız*<span class="required">*</span></p>
+                                        <textarea name="mesaj" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="question">
+                                                <div class="question-answer checkbox-item">
+                                                    <div>
+                                                        <input type="checkbox" id="check_1" name="check_1"
+                                                            value="kisisel_veriler" required />
+                                                        <label for="check_1" class="check"><span>6698 sayılı
+                                                                Kişisel
+                                                                Verilerin Korunması Kanununa ait bilgilendirmeyi
+                                                                okudum.</span></label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" id="check_2" name="check_2"
+                                                            value="aydinlatma_metni" required />
+                                                        <label for="check_2" class="check"><span>Tarafıma
+                                                                Morfit
+                                                                System tarafından reklam, pazarlama, tanıtım ve
+                                                                bilgilendirme amaçlı SMS, e-posta ve telefon yoluyla
+                                                                elektronik ileti gönderilmesi amacıyla Aydınlatma ve
+                                                                Açık
+                                                                Rıza Metni Kapsamında onay/açık rıza verdiğimi beyan
+                                                                ediyorum.</span></label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <input type="checkbox" id="check_2" name="check_2"
-                                                    value="aydinlatma_metni" required />
-                                                <label for="check_2" class="check"><a href="#"><span>Tarafıma Morfit
-                                                            System tarafından reklam, pazarlama, tanıtım ve
-                                                            bilgilendirme amaçlı SMS, e-posta ve telefon yoluyla
-                                                            elektronik ileti gönderilmesi amacıyla Aydınlatma ve Açık
-                                                            Rıza Metni Kapsamında onay/açık rıza verdiğimi beyan
-                                                            ediyorum.</span></a></label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="g-recaptcha"
+                                                    data-sitekey="6LfGXUsqAAAAAKaUfHrz0xL8M_T3-mOLXVaVUD8f">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="btn-block">
+                                                    <button type="submit">Gönder</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="g-recaptcha" data-sitekey="6LfGXUsqAAAAAKaUfHrz0xL8M_T3-mOLXVaVUD8f">
-                                    </div>
-
-                                    <div class="btn-block">
-                                        <button type="submit">Gönder</button>
-                                    </div>
-
-                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
+
         </div>
     </section>
+
     <section class="cihaz mb-0" data-aos="zoom-in-up" data-aos-delay="300">
-        <h2 class="cihazlar-baslik pb-5">TÜM CİHAZLARIMIZ</h2>
+        <h2 class="cihazlar-baslik py-4 mt-5">TÜM CİHAZLARIMIZ</h2>
 
         <div class="container" id="container">
             <div class="swiper-container-wrapper">
@@ -163,7 +150,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                         </div>
                                         <div class="item-text">
                                             <h4 class="item-title">Vacu Magic Slim Line</h4>
-                                            <a href="vacu-magic-slim-line" class="cihaza-git">Cihazı İncele</a>
+                                            <a href="https://www.morfitsystems.com/vacu-magic-slim-line" class="cihaza-git">Cihazı İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -181,7 +168,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                         </div>
                                         <div class="item-text">
                                             <h4 class="item-title">Vacu Magic Beauty Line</h4>
-                                            <a href="vacu-magic-beauty-line" class="cihaza-git">Cihazı İncele</a>
+                                            <a href="https://www.morfitsystems.com/vacu-magic-beauty-line" class="cihaza-git">Cihazı İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +185,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                         </div>
                                         <div class="item-text">
                                             <h4 class="item-title">İnfra Bike</h4>
-                                            <a href="infra-bike" class="cihaza-git">Cihazı İncele</a>
+                                            <a href="https://www.morfitsystems.com/infra-bike" class="cihaza-git">Cihazı İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -215,7 +202,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                         </div>
                                         <div class="item-text">
                                             <h4 class="item-title">Vacu Elliptical</h4>
-                                            <a href="vacu-elliptical" class="cihaza-git">Cihazı İncele</a>
+                                            <a href="https://www.morfitsystems.com/vacu-elliptical" class="cihaza-git">Cihazı İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +217,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                         </div>
                                         <div class="item-text">
                                             <h4 class="item-title">Aqua Bike</h4>
-                                            <a href="aqua-bike" class="cihaza-git">Cihazı İncele</a>
+                                            <a href="https://www.morfitsystems.com/aqua-bike" class="cihaza-git">Cihazı İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +232,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                         </div>
                                         <div class="item-text">
                                             <h4 class="item-title">Magic Roll</h4>
-                                            <a href="magic-roll" class="cihaza-git">Cihazı İncele</a>
+                                            <a href="https://www.morfitsystems.com/magic-roll" class="cihaza-git">Cihazı İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -260,7 +247,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                         </div>
                                         <div class="item-text">
                                             <h4 class="item-title">Body Roll</h4>
-                                            <a href="body-roll" class="cihaza-git">Cihazı İncele</a>
+                                            <a href="https://www.morfitsystems.com/body-roll" class="cihaza-git">Cihazı İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -275,7 +262,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                         </div>
                                         <div class="item-text">
                                             <h4 class="item-title">Magic Vib</h4>
-                                            <a href="magic-vib" class="cihaza-git">Cihazı İncele</a>
+                                            <a href="https://www.morfitsystems.com/magic-vib" class="cihaza-git">Cihazı İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -299,19 +286,73 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
             </div>
         </div>
     </section>
+    <section class="py-5">
+        <div class="container text-center px-5">
+            <!-- Üst Başlıklar -->
+            <p data-aos="fade-down" class="text-we-little ">Küçük Yatırım ile</p>
+            <h2 data-aos="fade-down" class="we-title">BÜYÜK KAZANÇ</h2>
+            <p class="text-we">
+                Yes, we have a free version of untitled UI available for you to try out! it’s an incredibly powerful and
+                large UI kit for Figma in it’s on right, but is doesn’t use the latest componentYes, we have a free
+                version of untitled UI available for you to try out! it’s an incredibly powerful and large UI kit for
+                Figma in it’s on right, but is doesn’t use the latest component
+            </p>
+            <div class="row mt-5 px-lg-5 custom-card-row">
+                <!-- Kart 1 -->
+                <div class="col-md-3">
+                    <div class="custom-card">
+                        <img src="assets/img/egitim-kadrosu.svg" class="custom-icon" alt="Tecrübeli Eğitim Kadrosu">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Tecrübeli Eğitim <br> Kadrosu</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kart 2 -->
+                <div class="col-md-3">
+                    <div class="custom-card">
+                        <img src="assets/img/teknik-servis.svg" class="custom-icon" alt="Uzman Teknik Servis Kadrosu">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Uzman Teknik <br> Servis Kadrosu</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kart 3 -->
+                <div class="col-md-3">
+                    <div class="custom-card">
+                        <img src="assets/img/hizli-teslimat.svg" class="custom-icon" alt="Hızlı Teslimat">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Hızlı Teslimat</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kart 4 -->
+                <div class="col-md-3">
+                    <div class="custom-card">
+                        <img src="assets/img/yatirim.svg" class="custom-icon" alt="Bir Yılda Geri Dönen Yatırım">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Bir Yılda Geri <br> Dönen Yatırım</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section>
         <div class="container d-flex justify-content-center mt-5 mt-lg-0">
             <div class="row d-flex mx-auto">
-                <div class="col-md-6 d-flex justify-content-center align-items-start flex-column text-start px-5">
+                <div class="col-lg-6 d-flex justify-content-center align-items-start flex-column text-start px-5">
                     <p class="ust_baslik">Morfit ile Franchise Sektörünün</p>
                     <h2 class="yildiz_olun">YILDIZI OLUN</h2>
                     <p class="alt_p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                         euismod tincidunt
                         ut laoreet dolore magna aliquam erat volutpat.
                     </p>
-                    <button class="morfitli_ol" data-aos="fade-in"><a href="iletisim.php">Morfit’li Ol</a></button>
+                    <button class="morfitli_ol" data-aos="fade-in"><a href="iletisim">Morfit’li Ol</a></button>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center align-items-center" data-aos="zoom-in-down"
+                <div class="col-lg-6 d-flex justify-content-center align-items-center" data-aos="zoom-in-down"
                     data-aos-delay="300"><img src="assets/img/morfitliol.jpg" alt="morfitliol" class="img-fluid"></div>
             </div>
         </div>

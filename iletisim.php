@@ -10,38 +10,32 @@ $canonical = 'iletisim'; // Varsayılan değer veya boş bırakabilirsiniz
 
 include('head.php'); // SEO bilgilerini head kısmında kullanır
 ?>
-<link rel="stylesheet" href="assets/css/cihaz.css">
-<link rel="stylesheet" href="assets/css/tum-cihazlar.css">
 <link rel="stylesheet" href="assets/css/iletisim.css">
 <link rel="stylesheet" href="assets/css/salon.css">
 
 <body>
     <?php include('header.php'); ?>
     <section class="py-5 mt-5" id="merkez">
-    <div class="container mt-5">
+    <div class="container px-5 mt-5">
+       
+        <div class="row px-5">
         <h1 class="kurumsal-baslik">İletişim Bilgileri</h1>
-        <div class="row">
-            <ul class="kurumsal-hash">
-                <li><a href="#merkez">Morfit Merkez</a></li>
-                <li><a href="#bayi">Bayiler</a></li>
-                <li><a href="#form">Başvuru Formu</a></li>
-            </ul>
         </div>
-        <div class="d-flex justify-content-center align-items-center pt-5 mt-5 cards" style="gap: 90px;">
+        <div class="d-flex justify-content-center align-items-center pt-5 cards" style="gap: 90px;">
             <div class="card">
-                <a href="tel:+905533881469">
-                    <img src="assets/img/icons8-phone-50.png" alt="Telefon">
+                <a href="tel:+905533881469" target="_blank">
+                    <img src="assets/img/phone.png" alt="Telefon">
                     <span>+90 553 388 14 69</span>
                 </a>
             </div>
             <div class="card">
-                <a href="mailto:info@morfit.com">
-                    <img src="assets/img/icons8-mail-50.png" alt="E-posta">
-                    <span>info@morfit.com</span>
+                <a href="mailto:info@morfitsystems.com" target="_blank">
+                    <img src="assets/img/mail.png" alt="E-posta">
+                    <span>info@morfitsystems.com</span>
                 </a>
             </div>
             <div class="card">
-                <a href="https://goo.gl/maps/YourGoogleMapsLink" target="_blank">
+                <a href="https://maps.app.goo.gl/m1cUHfLVucteNwf69" target="_blank">
                     <img src="assets/img/icons8-map-location-66.png" alt="Konum">
                     <span>Ali Baba, Yeşiloğlu Blv. 78/B, 63320 Karaköprü/Şanlıurfa</span>
                 </a>
@@ -50,54 +44,6 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
     </div>
 </section>
 
-<section class="container cihaz mb-5 py-5" data-aos="zoom-out-up" id="bayi">
-    <h2 class="cihazlar-baslik pb-4 pt-3">Lorem ipsum dolor sit amet.</h2>
-    <p class="alt-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-    
-    <div class="container p-5" id="container">
-        <div class="swiper-container-wrapper">
-            <div class="swiper cozumSwiper">
-                <div class="swiper-wrapper">
-                    <!-- First Slide -->
-                    <div class="swiper-slide">
-                        <div class="card-bayi">
-                            <i class="bi bi-pin-map-fill"></i>
-                            <p>Antalya</p>
-                            <a href="#">+90000000000</a>
-                            <a href="mailto:info@morfitsystems.com">info@morfitsystems.com</a>
-                        </div>
-                    </div>
-                    <!-- Second Slide -->
-                    <div class="swiper-slide">
-                        <div class="card-bayi">
-                            <i class="bi bi-pin-map-fill"></i>
-                            <p>İstanbul</p>
-                            <a href="#">+90000000000</a>
-                            <a href="mailto:istanbul@morfitsystems.com">istanbul@morfitsystems.com</a>
-                        </div>
-                    </div>
-                    <!-- Third Slide -->
-                    <div class="swiper-slide">
-                        <div class="card-bayi">
-                            <i class="bi bi-pin-map-fill"></i>
-                            <p>Ankara</p>
-                            <a href="#">+90000000000</a>
-                            <a href="mailto:ankara@morfitsystems.com">ankara@morfitsystems.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation buttons -->
-                <div class="custom-swiper-button-prev">
-                    <span class="material-symbols-outlined">arrow_circle_left</span>
-                </div>
-                <div class="custom-swiper-button-next">
-                    <span class="material-symbols-outlined">arrow_circle_right</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
     <section id="form">
         <div class="container p-lg-5">
@@ -258,76 +204,8 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
             });
     });
     </script>
-    <script type="module">
-    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const swiper = new Swiper('.cozumSwiper', {
-            slidesPerView: 1,
-            loop: true, // Sonsuz döngü
-            autoplay: {
-                delay: 5000, // Otomatik ilerleme aralığı (milisaniye cinsinden)
-                disableOnInteraction: false, // Kullanıcı etkileşimiyle otomatik ilerlemeyi devre dışı bırakma
-            },
-            navigation: {
-                nextEl: '.custom-swiper-button-next',
-                prevEl: '.custom-swiper-button-prev',
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 2,
-                },
-                1200: {
-                    slidesPerView: 2,
-                },
-            },
-        });
-    });
-    </script>
-    <script>
-    // Get all links inside the list
-    var links = document.querySelectorAll('.kurumsal-hash li a');
 
-    // Loop through each link
-    links.forEach(function(link) {
-        // Add an event listener for click event
-        link.addEventListener('click', function() {
-            // Remove active class from all links
-            links.forEach(function(l) {
-                l.classList.remove('active');
-            });
-
-            // Add active class to the clicked link
-            link.classList.add('active');
-        });
-    });
-
-    // Function to check and add active class based on URL hash
-    function checkActiveLink() {
-        var hash = window.location.hash;
-        // Loop through each link
-        links.forEach(function(link) {
-            // If the link's href matches the hash, add active class
-            if (link.getAttribute('href') === hash) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        });
-    }
-
-    // Call the function initially to set active link based on URL
-    checkActiveLink();
-
-    // Listen for hashchange event and update active link accordingly
-    window.addEventListener('hashchange', checkActiveLink);
-    </script>
 </body>
 
 </html>

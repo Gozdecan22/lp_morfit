@@ -27,10 +27,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $mail->IsHTML(true);
             $mail->SetLanguage("tr", "phpmailer/language");
             $mail->CharSet = "utf-8";
-            $mail->Username = "dbtgozde@dbtdora.com";
-            $mail->Password = "Dbt.2024**";
-            $mail->SetFrom("dbtgozde@dbtdora.com", $_POST["email"]);
-            $mail->AddAddress("dbtgozde@dbtdora.com");
+            $mail->Username = "info@morfitsystems.com";
+            $mail->Password = "Morfit.2024**";
+            $mail->SetFrom("info@morfitsystems.com", $_POST["email"]);
+            $mail->AddAddress("info@morfitsystems.com");
             $mail->Subject = $_POST["subject"];
 
             // Form data

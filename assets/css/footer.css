@@ -44,7 +44,7 @@ footer .container {
 }
 
 .social-icons a {
-  color: #ffc107; /* Sarı ikon rengi */
+  color: #a7814e; /* Sarı ikon rengi */
   font-size: 15px; /* Küçük ikon boyutu */
   text-decoration: none;
 }
@@ -89,6 +89,6 @@ footer .container {
     gap: 10px;
   }
   .social-icons a {
-    color: #ffc107 !important; /* Sarı ikon rengi */
+    color: #a7814e !important; /* Sarı ikon rengi */
   }
 }
