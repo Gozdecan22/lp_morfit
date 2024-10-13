@@ -18,8 +18,8 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
     <section class="py-5 mt-5" id="merkez">
     <div class="container px-5 mt-5">
        
-        <div class="row px-5">
-        <h1 class="kurumsal-baslik">İletişim Bilgileri</h1>
+        <div class="row px-lg-5">
+        <h1 class="kurumsal-baslik" style="text-wrap: nowrap;">İletişim Bilgileri</h1>
         </div>
         <div class="d-flex justify-content-center align-items-center pt-5 cards" style="gap: 90px;">
             <div class="card">

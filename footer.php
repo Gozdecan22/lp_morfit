@@ -11,9 +11,9 @@
         <a href="#"><i class="bi bi-youtube"></i></a>
       </div>
       <div class="footer-bottom-links">
-        <a href="#">Telif Hakkı</a>
-        <a href="#">Kullanım Koşulları</a>
-        <a href="#">Çerez Kullanımı</a>
+        <a href="telif-hakki">Telif Hakkı</a>
+        <a href="kullanim-kosullari">Kullanım Koşulları</a>
+        <a href="cerez-kullanimi">Çerez Kullanımı</a>
       </div>
     </div>
   </div>
