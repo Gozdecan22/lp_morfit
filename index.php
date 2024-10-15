@@ -395,7 +395,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
 
         var userName = document.getElementById("name").value; // Kullanıcı adını al
 
-        fetch("mesaj-gonder-iletisim.php", {
+        fetch("mesaj-gonder.php", {
                 method: "POST",
                 body: formData
             })

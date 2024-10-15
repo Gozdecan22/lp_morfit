@@ -28,10 +28,9 @@
                             <a class="nav-link" href="iletisim">İletişim</a>
                         </li>
                     </ul>
-                    <a class="nav-link px-2" href="#"><i class="bi bi-linkedin"></i></a>
-                    <a class="nav-link px-2" href="#"><i class="bi bi-instagram"></i></a>
-                    <a class="nav-link px-2" href="#"><i class="bi bi-facebook"></i></a>
-                    <a class="nav-link px-2" href="#"><i class="bi bi-youtube"></i></a>
+                    <a class="nav-link px-2" href="https://www.instagram.com/morfit_turkiye/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a class="nav-link px-2" href="https://www.facebook.com/people/Morfit/100092975647559/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a class="nav-link px-2" href="https://www.youtube.com/channel/UCflgmXSyvz8QOCCo3F2-NFg" target="_blank"><i class="bi bi-youtube"></i></a>
                 </div>
             </div>
             <div class="fixed-buttons">
@@ -75,10 +74,9 @@
 
                 <!-- Sosyal Medya İkonları -->
                 <div class="social-icons">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.facebook.com/people/Morfit/100092975647559/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/morfit_turkiye/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCflgmXSyvz8QOCCo3F2-NFg" target="_blank"><i class="bi bi-youtube"></i></a>
                 </div>
 
                 <!-- Dil Seçenekleri -->

@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $mail->IsSMTP();
             $mail->SMTPDebug = 1;
             $mail->SMTPAuth = true;
-            $mail->Host = "mail.morfitsystems.com";
+            $mail->Host = "cph3.trdns.com";
             $mail->Port = 587;
             $mail->IsHTML(true);
             $mail->SetLanguage("tr", "phpmailer/language");
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $mail->Password = "Morfit.2024**";
             $mail->SetFrom("info@morfitsystems.com", $_POST["email"]);
             $mail->AddAddress("info@morfitsystems.com");
-            $mail->Subject = $_POST["subject"];
+            $mail->Subject = $_POST["name"];
 
             // Form data
             $name = $_POST['name'];

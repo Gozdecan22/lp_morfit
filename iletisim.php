@@ -111,19 +111,19 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                                             <div>
                                                 <input type="checkbox" id="check_1" name="check_1"
                                                     value="kisisel_veriler" required />
-                                                <label for="check_1" class="check"><a href="#"><span>6698 sayılı Kişisel
+                                                <label for="check_1" class="check"><span>6698 sayılı Kişisel
                                                             Verilerin Korunması Kanununa ait bilgilendirmeyi
-                                                            okudum.</span></a></label>
+                                                            okudum.</span></label>
                                             </div>
                                             <div>
                                                 <input type="checkbox" id="check_2" name="check_2"
                                                     value="aydinlatma_metni" required />
-                                                <label for="check_2" class="check"><a href="#"><span>Tarafıma Morfit
+                                                <label for="check_2" class="check"><span>Tarafıma Morfit
                                                             System tarafından reklam, pazarlama, tanıtım ve
                                                             bilgilendirme amaçlı SMS, e-posta ve telefon yoluyla
                                                             elektronik ileti gönderilmesi amacıyla Aydınlatma ve Açık
                                                             Rıza Metni Kapsamında onay/açık rıza verdiğimi beyan
-                                                            ediyorum.</span></a></label>
+                                                            ediyorum.</span></label>
                                             </div>
                                         </div>
                                     </div>
@@ -183,7 +183,7 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
 
         var userName = document.getElementById("name").value; // Kullanıcı adını al
 
-        fetch("mesaj-gonder-iletisim.php", {
+        fetch("mesaj-gonder.php", {
                 method: "POST",
                 body: formData
             })
