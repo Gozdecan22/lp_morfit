@@ -224,14 +224,14 @@ include('head.php'); // SEO bilgilerini head kısmında kullanır
                         olmayacaktır. Hatalı, gerçeğe/hukuka aykırı, kötü niyetli başvurular
                         karşısında şirketimizin yasal hakları saklıdır.<br><br>
 
-                        Ticari Ünvan: Morfit Spor Ürünleri İthalat İhracat Şirketi
+                        Ticari Ünvan: Morfit Spor Ürünleri İnşaat İthalat İhracat Sanayi ve Ticaret Limited Şirketi
                         <br><br>
                         Adres: Ali Baba, Yeşiloğlu Blv.
                         78/B, 63320 Karaköprü/Şanlıurfa
                         <br><br>
-                        MERSİS No:
+                        MERSİS No: 0622240990600001
                         <br><br>
-                        Ticaret Sicil No:
+                        Ticaret Sicil No: 27521
                         <br><br>
                         Tel: +90 553 388 14 69
                         <br><br>
